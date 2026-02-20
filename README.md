@@ -124,29 +124,3 @@ Notes:
 2. Ensure the Project SDK is set (File → Project Structure → Project SDK).
 3. Navigate to a demo class with `public static void main(String[] args)` (e.g., `Factory/Client.java`).
 4. Click the green run icon.
-
----
-
-## Adding a new pattern
-
-1. Create a new package under `src/`, e.g. `src/Strategy`.
-2. Add:
-
-   * interfaces (abstractions)
-   * concrete implementations
-   * a small client/demo class with a `main` method
-3. Recompile and run:
-
-```bash
-javac -d build $(find src -name "*.java")
-java -cp build Strategy.Demo
-```
-
----
-
-## Notes
-
-* The `out/` folder appears to contain IDE-compiled artifacts; it is not required to compile/run from the CLI.
-* `Main.java` is currently a minimal placeholder (“Hello world!”). The pattern demos are best explored by running the per-pattern client/demo classes.
-
- file.
